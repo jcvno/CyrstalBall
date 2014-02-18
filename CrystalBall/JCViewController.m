@@ -7,6 +7,7 @@
 //
 
 #import "JCViewController.h"
+#import "JCCrystalBall.h"
 
 @interface JCViewController ()
 
@@ -17,17 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.predictions = [[NSArray alloc] initWithObjects:@"It is certain",
-                       @"It is decidedly so",
-                       @"All signs say YES",
-                       @"The stars are not aligned",
-                       @"My reply is no",
-                       @"It is doubtful",
-                       @"Better not tell you now",
-                       @"Concentrate and ask again",
-                       @"Unable to answer now",
-                        @"Maybe, yes", nil];
+    self.crystalBall = [[JCCrystalBall alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,8 +28,7 @@
 }
 
 - (IBAction)buttonPressed {
-    int random = arc4random_uniform(self.predictions.count);
-    self.predictionLabel.text = [self.predictions objectAtIndex:random];
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
 }
 
 

@@ -21,6 +21,7 @@
 		9C92430918B30E830003D569 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9242EB18B30E830003D569 /* UIKit.framework */; };
 		9C92431118B30E830003D569 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C92430F18B30E830003D569 /* InfoPlist.strings */; };
 		9C92431318B30E830003D569 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C92431218B30E830003D569 /* CrystalBallTests.m */; };
+		9C92431E18B348F80003D569 /* JCCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C92431D18B348F80003D569 /* JCCrystalBall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		9C92430E18B30E830003D569 /* CrystalBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBallTests-Info.plist"; sourceTree = "<group>"; };
 		9C92431018B30E830003D569 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C92431218B30E830003D569 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		9C92431C18B348F80003D569 /* JCCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCrystalBall.h; sourceTree = "<group>"; };
+		9C92431D18B348F80003D569 /* JCCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCrystalBall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				9C9242FD18B30E830003D569 /* JCViewController.m */,
 				9C9242FF18B30E830003D569 /* Images.xcassets */,
 				9C9242EE18B30E830003D569 /* Supporting Files */,
+				9C92431C18B348F80003D569 /* JCCrystalBall.h */,
+				9C92431D18B348F80003D569 /* JCCrystalBall.m */,
 			);
 			path = CrystalBall;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C92431E18B348F80003D569 /* JCCrystalBall.m in Sources */,
 				9C9242F418B30E830003D569 /* main.m in Sources */,
 				9C9242FE18B30E830003D569 /* JCViewController.m in Sources */,
 				9C9242F818B30E830003D569 /* JCAppDelegate.m in Sources */,
