@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface JCViewController : UIViewController
+- (IBAction)buttonPressed;
 
 @end

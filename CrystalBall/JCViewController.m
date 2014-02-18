@@ -26,4 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonPressed {
+    NSLog(@"Button Pressed");
+}
+
+
+
 @end

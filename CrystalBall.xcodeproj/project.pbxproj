@@ -112,8 +112,6 @@
 		9C9242ED18B30E830003D569 /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
-				9C9242F618B30E830003D569 /* JCAppDelegate.h */,
-				9C9242F718B30E830003D569 /* JCAppDelegate.m */,
 				9C9242F918B30E830003D569 /* Main.storyboard */,
 				9C9242FC18B30E830003D569 /* JCViewController.h */,
 				9C9242FD18B30E830003D569 /* JCViewController.m */,
@@ -126,6 +124,8 @@
 		9C9242EE18B30E830003D569 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C9242F618B30E830003D569 /* JCAppDelegate.h */,
+				9C9242F718B30E830003D569 /* JCAppDelegate.m */,
 				9C9242EF18B30E830003D569 /* CrystalBall-Info.plist */,
 				9C9242F018B30E830003D569 /* InfoPlist.strings */,
 				9C9242F318B30E830003D569 /* main.m */,
