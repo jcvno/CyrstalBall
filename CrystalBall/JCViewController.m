@@ -17,6 +17,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.predictions = [[NSArray alloc] initWithObjects:@"It is certain",
+                       @"It is decidedly so",
+                       @"All signs say YES",
+                       @"The stars are not aligned",
+                       @"My reply is no",
+                       @"It is doubtful",
+                       @"Better not tell you now",
+                       @"Concentrate and ask again",
+                       @"Unable to answer now",
+                        @"Maybe, yes", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,20 +37,9 @@
 }
 
 - (IBAction)buttonPressed {
-    
-    NSArray *predictions = [[NSArray alloc] initWithObjects:@"It is certain",
-                            @"It is decidedly so",
-                            @"All signs say YES",
-                            @"The stars are not aligned",
-                            @"My reply is no",
-                            @"It is doubtful",
-                            @"Better not tell you now",
-                            @"Concentrate and ask again",
-                            @"Unable to answer now", nil];
-    
-    self.predictionLabel.text = [predictions objectAtIndex:3];
+    int random = arc4random_uniform(self.predictions.count);
+    self.predictionLabel.text = [self.predictions objectAtIndex:random];
 }
-
 
 
 @end
