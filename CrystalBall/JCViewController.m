@@ -19,6 +19,10 @@
 {
     [super viewDidLoad];
     self.crystalBall = [[JCCrystalBall alloc] init];
+    
+    UIImage *backgroundImage = [UIImage imageNamed:@"background"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:backgroundImage];
+    [self.view insertSubview:imageView atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning

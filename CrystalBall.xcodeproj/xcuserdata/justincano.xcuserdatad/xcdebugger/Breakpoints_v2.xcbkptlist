@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CrystalBall/JCViewController.m"
-            timestampString = "414403777.850654"
+            timestampString = "414451932.304226"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "-buttonPressed"
             landmarkType = "5">
          </BreakpointContent>
