@@ -17,7 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,7 +26,18 @@
 }
 
 - (IBAction)buttonPressed {
-    self.predictionLabel.text = @"YES";
+    
+    NSArray *predictions = [[NSArray alloc] initWithObjects:@"It is certain",
+                            @"It is decidedly so",
+                            @"All signs say YES",
+                            @"The stars are not aligned",
+                            @"My reply is no",
+                            @"It is doubtful",
+                            @"Better not tell you now",
+                            @"Concentrate and ask again",
+                            @"Unable to answer now", nil];
+    
+    self.predictionLabel.text = [predictions objectAtIndex:3];
 }
 
 
