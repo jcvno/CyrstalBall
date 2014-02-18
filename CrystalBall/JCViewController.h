@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface JCViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
 - (IBAction)buttonPressed;
 
 @end
