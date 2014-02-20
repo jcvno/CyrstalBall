@@ -13,6 +13,7 @@
 @interface JCViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong,nonatomic) JCCrystalBall *crystalBall;
-- (IBAction)buttonPressed;
+
+-(void) makePrediction;
 
 @end
