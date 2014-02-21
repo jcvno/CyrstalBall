@@ -16,13 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="nO2-rU-BOL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="nO2-rU-BOL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="fTP-AV-Tp2">
-                                <rect key="frame" x="48" y="182" width="225" height="134"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="fTP-AV-Tp2">
+                                <rect key="frame" x="48" y="201" width="225" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="UJG-E7-1xz"/>
+                                    <constraint firstAttribute="width" constant="225" id="lKD-j4-0Ea"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -33,19 +37,23 @@
                             <constraint firstItem="nO2-rU-BOL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6QI-St-BF9"/>
                             <constraint firstItem="hkK-5y-RgP" firstAttribute="top" secondItem="nO2-rU-BOL" secondAttribute="bottom" id="KWb-kc-dnw"/>
                             <constraint firstAttribute="trailing" secondItem="nO2-rU-BOL" secondAttribute="trailing" id="P9z-ue-dR7"/>
+                            <constraint firstItem="fTP-AV-Tp2" firstAttribute="centerY" secondItem="nO2-rU-BOL" secondAttribute="centerY" constant="-16" id="QNn-W6-sIR"/>
                             <constraint firstItem="nO2-rU-BOL" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="uep-GU-2OK"/>
+                            <constraint firstItem="fTP-AV-Tp2" firstAttribute="centerX" secondItem="nO2-rU-BOL" secondAttribute="centerX" constant="0.5" id="vmb-kg-pnI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="nO2-rU-BOL" id="Geg-3b-EGp"/>
                         <outlet property="predictionLabel" destination="fTP-AV-Tp2" id="6GT-M9-bcC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="179" y="-46"/>
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="320" height="568"/>
+        <image name="CB00001" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
