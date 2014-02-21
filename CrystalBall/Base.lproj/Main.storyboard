@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="nO2-rU-BOL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="nO2-rU-BOL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -29,6 +29,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nO2-rU-BOL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6QI-St-BF9"/>
+                            <constraint firstItem="hkK-5y-RgP" firstAttribute="top" secondItem="nO2-rU-BOL" secondAttribute="bottom" id="KWb-kc-dnw"/>
+                            <constraint firstAttribute="trailing" secondItem="nO2-rU-BOL" secondAttribute="trailing" id="P9z-ue-dR7"/>
+                            <constraint firstItem="nO2-rU-BOL" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="uep-GU-2OK"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="predictionLabel" destination="fTP-AV-Tp2" id="6GT-M9-bcC"/>
